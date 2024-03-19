@@ -3,9 +3,10 @@ import {AnimatePresence} from "framer-motion";
 import {motion} from "framer-motion";
 import {Typography} from "@mui/material";
 import Image from "next/image";
-import Link from 'next/link'
+import React from "react";
+type Props = {};
 
-export default function Home() {
+const Index: React.FC<Props> = ({}) => {
   return (
       <AnimatePresence mode={"wait"}>
           <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -14,10 +15,11 @@ export default function Home() {
                   whileInView={{opacity: 1, scale: 1}}
                   transition={{delay: 0.2, duration: 1, ease: [0.16, 1, 0.3, 1]}}
               >
-                  <Typography fontSize={"xxx-large"}>WIDER</Typography>
-                  <Link href={"/about"}>あ</Link>
+                  <Typography fontSize={"xxx-large"}>WIDER2</Typography>
               </motion.div>
           </main>
       </AnimatePresence>
 );
 }
+
+export default Index;
