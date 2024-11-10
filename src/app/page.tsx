@@ -2,7 +2,6 @@
 import {AnimatePresence} from "framer-motion";
 import {motion} from "framer-motion";
 import {Typography} from "@mui/material";
-import Image from "next/image";
 import Link from 'next/link'
 
 export default function Home() {
