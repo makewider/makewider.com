@@ -10,7 +10,7 @@ const variants = {
 export default function Template({ children }: { children: React.ReactNode }) {
     return (
         <motion.div
-            className='site-wrapper'
+            // className='site-wrapper'
             variants={variants}
             initial='hidden'
             animate='enter'
